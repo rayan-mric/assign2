@@ -20,6 +20,8 @@ def generateReverseOrder(n):
         return ['']
     else:
         return ['1' + i for i in generateReverseOrder(n-1)] + ['0' + j for j in generateReverseOrder(n-1)]
+    #   return [i + j for i in generateReverseOrder(n - 1) for j in ['1', '0']]
+
 
 
 # Question 3
